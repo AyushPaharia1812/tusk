@@ -15,17 +15,17 @@ private:
 public:
     linked_list()
     {
-        head = NULL;
-        tail = NULL;
+        head = nullptr;
+        tail = nullptr;
     }
 
     void add_node(int n)
     {
         node *tmp = new node;
         tmp->data = n;
-        tmp->next = NULL;
+        tmp->next = nullptr;
 
-        if(head == NULL)
+        if(head == nullptr)
         {
             head = tmp;
             tail = tmp;
